@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn: #61acb3;
+  --font: "Poppins";
+}
+
+html {
+  font-family: var(--font);
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px 0px rgba(110, 110, 110, 0.48);
+}
+
+.left {
+  width: 85%;
+  height: 470px;
+  background: url("Images/beach.jpg") no-repeat center / cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.right {
+  width: 60%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.right h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.right p {
+  font-size: 13px;
+}
+
+.form1 {
+  padding-top: 20px;
+}
+
+.form1 input {
+  width: 250px;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border: none;
+  text-align: left;
+  padding: 5px 30px 10px 5px;
+  border-bottom: 1px solid gray;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.left2 {
+  font-size: 12px;
+}
+
+.right2 p {
+  font-size: 12px;
+  color: var(--btn);
+}
+
+.right2 p:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  margin-top: 40px;
+  background-color: var(--btn);
+  border-radius: 15px;
+  padding: 3px 0;
+}
+
+.login-button:hover {
+  background-color: #65b8c0;
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+
+.btn {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+.footer {
+  padding-top: 80px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: gray;
+}
+
+input:focus {
+  outline: none;
+}
+
+[type="checkbox"] {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    margin-top: 30px;
+    height: 320px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .right {
+    margin-top: -10px;
+  }
+}
